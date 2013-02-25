@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  category: MyString
+  price: 1
+  quantity: 1
+  brand: MyString
+
+two:
+  category: MyString
+  price: 1
+  quantity: 1
+  brand: MyString

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cloths: MyString
+  shoes: MyString
+  jewellery: MyString
+  bags: MyString
+  fragrance: MyString
+
+two:
+  cloths: MyString
+  shoes: MyString
+  jewellery: MyString
+  bags: MyString
+  fragrance: MyString

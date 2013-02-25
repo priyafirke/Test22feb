@@ -1,0 +1,37 @@
+<%= form_for(@category) do |f| %>
+  <% if @category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+      <% @category.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cloths %><br />
+    <%= f.text_field :cloths %>
+  </div>
+  <div class="field">
+    <%= f.label :shoes %><br />
+    <%= f.text_field :shoes %>
+  </div>
+  <div class="field">
+    <%= f.label :jewellery %><br />
+    <%= f.text_field :jewellery %>
+  </div>
+  <div class="field">
+    <%= f.label :bags %><br />
+    <%= f.text_field :bags %>
+  </div>
+  <div class="field">
+    <%= f.label :fragrance %><br />
+    <%= f.text_field :fragrance %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

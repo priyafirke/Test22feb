@@ -1,0 +1,31 @@
+<h1>Listing categories</h1>
+
+<table>
+  <tr>
+    <th>Cloths</th>
+    <th>Shoes</th>
+    <th>Jewellery</th>
+    <th>Bags</th>
+    <th>Fragrance</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @categories.each do |category| %>
+  <tr>
+    <td><%= category.cloths %></td>
+    <td><%= category.shoes %></td>
+    <td><%= category.jewellery %></td>
+    <td><%= category.bags %></td>
+    <td><%= category.fragrance %></td>
+    <td><%= link_to 'Show', category %></td>
+    <td><%= link_to 'Edit', edit_category_path(category) %></td>
+    <td><%= link_to 'Destroy', category, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Category', new_category_path %>
